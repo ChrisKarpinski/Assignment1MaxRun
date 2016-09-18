@@ -16,19 +16,19 @@ public class MaxRun {
 		// Scanner class instantiated to be able to read user input
 		Scanner readInput = new Scanner(System.in);
 		
-        String enteredString;
-        String wantContinue = "Y";
+        	String enteredString;
+        	String wantContinue = "Y";
         
-        while (wantContinue.equals("Y")) {
+        	while (wantContinue.equals("Y")) {
         	
         	System.out.println("Enter the string");
         	enteredString = readInput.next();
         	
         	System.out.println("The max running length in the string is: " + 
         	FindMaxRun(enteredString));
-            System.out.println("Would you like to continue? (enter Y or N)");
+            	System.out.println("Would you like to continue? (enter Y or N)");
             
-            wantContinue = readInput.next();
+            	wantContinue = readInput.next();
 
             while (!(wantContinue.equals("Y") || wantContinue.equals("N"))) {
                 // makes sure user enters valid option for continuation
